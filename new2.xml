@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<STUDENT>
+	<NAME>Roman</NAME>
+	<LASTNAME>Ignatev</LASTNAME>
+  <AGE>29</AGE>
+  <PETS>none</PETS>
+  <ESALARY>no</ESALARY>
+</STUDENT>
