@@ -1,9 +1,9 @@
 {
   "first_name" : "Roman",
   "last_name" : "Ignatev",
-  "age" : "29",
+  "age" : 29,
   "Pets" : "No_one",
-  "Expected_Salary" : "more_2000$",
+  "Expected_Salary" : 2000,
   "Favorite_Film" : "Joker",
   "Favorite_Serial" : "My_little_pony",
   "Favorite_Food" : "Szechwan_sauce",
