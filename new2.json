@@ -1,4 +1,6 @@
-Ignatev Roman Urevich
-29
-0
->2000$
+{
+  "first_name" : "Roman",
+  "last_name" : "Ignatev",
+  "Pets" : "No_one",
+  "Expected_Salary" : "more_2000$"
+}
