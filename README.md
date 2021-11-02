@@ -15,4 +15,5 @@ GitHub_hw_02.txt
 # Homework in DBeaver(SQL)
 ```
 SQL_1HW.sql
+SQL_2HW.sql
 ```
