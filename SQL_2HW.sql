@@ -27,7 +27,7 @@ select * from employees;
 Создать таблицу salary
 - id. Serial  primary key,
 - monthly_salary. Int, not null
-Наполнить таблицу salary 15 строками:
+Наполнить таблицу salary 15 строками.
  */
 
 create table salary (
