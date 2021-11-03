@@ -97,7 +97,7 @@ select * from employee_salary;
 - id. Serial  primary key,
 - role_name. int, not null, unique
 Поменять тип столба role_name с int на varchar(30)
-Наполнить таблицу roles 20 строками:
+Наполнить таблицу roles 20 строками.
 */
 
 create table roles (

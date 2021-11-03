@@ -10,7 +10,7 @@ select * from employee_salary;
 select * from employee_sala;
 
 
-/*2. Вывести всех работников у которых ЗП меньше 2000*/
+/*2. Вывести всех работников у которых ЗП меньше 2000.*/
 select * from employees e
 join employee_salary es
 on es.employee_id = e.id
