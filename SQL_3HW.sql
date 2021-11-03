@@ -38,7 +38,7 @@ select e.employee_name, s.monthly_salary from employees e
 full join employee_salary es on es.employee_id = e.id
 full join salary s on s.id = es.salary_id
 where salary_id is null;
--- where monthly_salary is null
+-- where monthly_salary is null;
 
 /*6. Вывести всех работников с названиями их должности.*/
 select e.employee_name, r.role_name from employees e
