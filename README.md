@@ -16,4 +16,5 @@ GitHub_hw_02.txt
 ```
 SQL_1HW.sql
 SQL_2HW.sql + diagram.jpg
+SQL_3HW.sql
 ```
