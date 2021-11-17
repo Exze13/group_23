@@ -1,0 +1,7 @@
+cd 1
+mkdir script1 script2 script3
+cd script2
+touch 4.txt 5.txt 6.txt 7.json 8.json
+mkdir test1 test2 test3
+ls -ls
+mv 4.txt 5.txt test1

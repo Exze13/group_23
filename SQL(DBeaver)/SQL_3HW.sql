@@ -38,7 +38,7 @@ select e.employee_name, s.monthly_salary from employees e
 full join employee_salary es on es.employee_id = e.id
 full join salary s on s.id = es.salary_id
 where salary_id is null;
--- where monthly_salary is null;
+-- where monthly_salary is null
 
 /*6. Вывести всех работников с названиями их должности.*/
 select e.employee_name, r.role_name from employees e
@@ -100,11 +100,27 @@ where role_name like '%Junior%';
 
 /*13. Вывести имена и зарплаты Middle специалистов*/
 select e.employee_name, r.role_name, s.monthly_salary from employees e
-join roles_employee re on re.employee_id = e.id
-join roles r on r.id = re.role_id
-join employee_salary es on es.employee_id = e.id
-join salary s on s.id = es.salary_id
-where role_name like '%Middle%';
+full join roles_employee re  on re.employee_id = e.id
+full join roles r 			 on r.id = re.role_id
+full join employee_salary es on es.employee_id = e.id
+join salary s 			 on s.id = es.salary_id
+where r.role_name like '%Middle%';
+
+
+select e.employee_name, r.role_name, s.monthly_salary from employees e 
+full join roles_employee re  on re.employee_id  = e.id 
+full join roles r 			 on r.id = re.role_id 
+full join employee_salary es on es.employee_id  = e.id 
+inner join salary s 		 on re.role_id  = s.id 
+where r.role_name like '%Senior%';
+
+select e.employee_name, r.role_name, s.monthly_salary from employees e 
+full join roles_employee re  on re.employee_id  = e.id 
+full join roles r 			 on r.id = re.role_id 
+full join employee_salary es on es.employee_id  = e.id 
+inner join salary s 		 on re.role_id  = s.id 
+where r.role_name like '%Middle%';
+
 /*14. Вывести имена и зарплаты Senior специалистов*/
 select e.employee_name, r.role_name, s.monthly_salary from employees e
 join roles_employee re on re.employee_id = e.id
