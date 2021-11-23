@@ -1,0 +1,26 @@
+ 1. Отобразить подключённый девайс в консоли.
+.\adb devices
+
+ 2. Вывести адрес приложения todolist в системе Android
+./adb shell pm list packages -f | FINDSTR "todolist"
+(./adb shell 'pm list packages -f' | grep todolist)
+
+ 3. Установить .apk файл приложениия todolist на телефон с компьютера через  ADB
+./adb install -r -t d:\adb\tdl.apk
+
+ 4. Сделать скриншот запущенного приложения todolist и сразу скопировать на компьютер в одной команде.
+./adb shell screencap -p /storage/emulated/0/sreen1.png && ./adb pull /storage/emulated/0/sreen1.png d:\adb\screen\sreen1.png - В PowerShell не работает
+
+Обходной путь:
+./adb shell screencap -p /storage/emulated/0/sreen1.png
+./adb pull /storage/emulated/0/sreen1.png d:\adb\screen\sreen1.png
+
+ 5. Вывести в консоль логи приложения todolist
+./adb shell 'logcat | grep -rnw  todolist'
+
+
+ 6. Скопировать логи приложения todolist на компьютер.
+./adb shell "logcat | grep -nw com.android.todolist" > d:\adb\sreen\logtdl.log
+
+ 7. Удалить приложение todolist с телефона через ADB
+./adb uninstall com.android.todolist
