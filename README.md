@@ -19,3 +19,11 @@ SQL_1HW.sql
 SQL_2HW.sql + diagram.jpg
 SQL_3HW.sql
 ```
+
+# Android Debug Bridge
+```
+ADB command.txt (Homework)
+tdl.apk (APP for Android)
+logtdl.log (log file)
+sreen1.png (screenshoot)
+```
