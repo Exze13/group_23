@@ -1,5 +1,5 @@
 # group_23
-# Git_Bush 
+# Git_Bash 
 ```
 GitHub_hw_00.txt
 GitHub_hw_01.txt
